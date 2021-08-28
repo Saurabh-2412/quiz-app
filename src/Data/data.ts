@@ -120,121 +120,204 @@ export const allQuizzes : Array<Quiz> = [
   },
   
   {
-      id: "fffa23a7-4d8c-4f09-8a63-5e1bc63ee7ec",
-      name: "Make world a better place",
-      totalScore: 50,
-      questions: [
+    id: "fffa23a7-4d8c-4f09-8a63-5e1bc63ee7ec",
+    name: "React",
+    totalScore: 25,
+    questions: [
+      {
+        id: "04c98537-9d22-4bec-83b7-ad4784162b1a",
+        question: "What is React?",
+        points: 5,
+        options: [
           {
-              id: "04c98537-9d22-4bec-83b7-ad4784162b1a",
-              question: "Gavin Belson originally offered how much to buy Pied Piper?",
-              points: 10,
-              options: [
-                  {
-                      id: "b829351e-9f55-4abd-a1d7-aa7a35404ce9",
-                      content: "$1,000,000",
-                      isAnswer: false
-                  },
-                  {
-                      id: "b45aa490-5a5f-41a3-8177-cca8b64b172e",
-                      content: "$600,000",
-                      isAnswer: true
-                  },
-                  {
-                      id: "a2b0c1d2-4f4f-4eef-9279-1a2ac7549700",
-                      content: "$100,000",
-                      isAnswer: false
-                  }
-              ]
+              id: "b829351e-9f55-4abd-a1d7-aa7a35404ce9",
+              content: "React is a fullstack JavaScript library",
+              isAnswer: false
           },
           {
-              id: "bee89d5a-8f2f-43b9-b879-02f1cdb8937d",
-              question: "At TechCrunch Disrupt, Jared was on what drug?",
-              points: 10,
-              options: [
-                  {
-                      id: "abef93aa-d1b8-4eeb-9694-26129a44eef5",
-                      content: "Adderall",
-                      isAnswer: true
-                  },
-                  {
-                      id: "fb380e5f-9d81-4f85-bf05-060f47b31b49",
-                      content: "Opiates",
-                      isAnswer: false
-                  },
-                  {
-                      id: "34cdb860-60e1-44de-b0ad-43d7a3ebfed8",
-                      content: "Weed",
-                      isAnswer: false
-                  }
-              ]
+              id: "b45aa490-5a5f-41a3-8177-cca8b64b172e",
+              content: "React is a front-end JavaScript library",
+              isAnswer: true
           },
           {
-              id: "2722ecd0-2d54-4836-8284-76fde5abe7d0",
-              question: "Where did Richard first meet Peter Gregory?",
-              points: 10,
-              options: [
-                  {
-                      id: "6377d841-c842-444a-b473-352578228ea7",
-                      content: "At a coffee shop",
-                      isAnswer: false
-                  },
-                  {
-                      id: "046e10c2-bca0-4f1e-940a-e5f225d0d374",
-                      content: "At a tech start-up competition",
-                      isAnswer: false
-                  },
-                  {
-                      id: "7108c1aa-3398-48c5-be3c-d7fda8b80444",
-                      content: "Outside a TED talk",
-                      isAnswer: true
-                  }
-              ]
-          },
-          {
-              id: "2a15eafe-8c11-40f1-89ab-3b8f55104e7a",
-              question: "What is the name of the test that measures the performance of lossless compression software?",
-              points: 10,
-              options: [
-                  {
-                      id: "d793b38e-9bc8-4421-be70-6fa2ded81933",
-                      content: "TechCrunch Test",
-                      isAnswer: false
-                  },
-                  {
-                      id: "289c2daa-469e-4f19-b27b-df6aa000f30e",
-                      content: "Compression Score",
-                      isAnswer: false
-                  },
-                  {
-                      id: "4ac36f5c-2bdd-4d1c-a2b2-60842f62ebd9",
-                      content: "Weissman Score",
-                      isAnswer: true
-                  }
-              ]
-          },
-          {
-              id: "1af0ab03-c699-4043-9967-7bbf930a9e39",
-              question: "Which middle-out compression company tricked Pied Piper into revealing their algorithms?",
-              points: 10,
-              options: [
-                  {
-                      id: "16bad4f8-d48f-41b5-a165-9aa6f5eff54e",
-                      content: "Endframe",
-                      isAnswer: true
-                  },
-                  {
-                      id: "2143d30a-0066-4f98-ae4f-bfc740171ef9",
-                      content: "Hooli",
-                      isAnswer: false
-                  },
-                  {
-                      id: "3003f123-7994-4994-ae8f-79630d91761a",
-                      content: "Google",
-                      isAnswer: false
-                  }
-              ]
+              id: "a2b0c1d2-4f4f-4eef-9279-1a2ac7549700",
+              content: "React is a back-end JavaScript library",
+              isAnswer: false
           }
-      ]
+        ]
+      },
+      {
+        id: "bee89d5a-8f2f-43b9-b879-02f1cdb8937d",
+        question: "What are the features of React?",
+        points: 5,
+        options: [
+          {
+            id: "abef93aa-d1b8-4eeb-9694-26129a44eef5",
+            content: "virtual DOM instead of the real DOM",
+            isAnswer: true
+          },
+          {
+            id: "fb380e5f-9d81-4f85-bf05-060f47b31b49",
+            content: "reacl DOM plays main role",
+            isAnswer: false
+          },
+          {
+            id: "34cdb860-60e1-44de-b0ad-43d7a3ebfed8",
+            content: "virtual DOM plays main role",
+            isAnswer: false
+          }
+        ]
+      },
+      {
+        id: "2722ecd0-2d54-4836-8284-76fde5abe7d0",
+        question: "What is JSX?",
+        points: 5,
+        options: [
+          {
+            id: "6377d841-c842-444a-b473-352578228ea7",
+            content: "JSX is a shorthand for JSXML.",
+            isAnswer: false
+          },
+          {
+            id: "7108c1aa-3398-48c5-be3c-d7fda8b80444",
+            content: "JSX is a shorthand for JavaScript XML.",
+            isAnswer: true
+          }
+        ]
+      },
+        {
+          id: "2a15eafe-8c11-40f1-89ab-3b8f55104e7a",
+          question: "What are React props?",
+          points: 5,
+          options: [
+            {
+              id: "d793b38e-9bc8-4421-be70-6fa2ded81933",
+              content: "Props are short for Properation",
+              isAnswer: false
+            },
+            {
+              id: "4ac36f5c-2bdd-4d1c-a2b2-60842f62ebd9",
+              content: "Props are short for Properties",
+              isAnswer: true
+            }
+          ]
+        },
+        {
+          id: "1af0ab03-c699-4043-9967-7bbf930a9e39",
+          question: "What are refs in React?",
+          points: 5,
+          options: [
+            {
+              id: "16bad4f8-d48f-41b5-a165-9aa6f5eff54e",
+              content: "Refs are the shorthand that is used for references in React. It helps to store a reference to a DOM node.",
+              isAnswer: true
+            },
+            {
+              id: "3003f123-7994-4994-ae8f-79630d91761a",
+              content: "Refs are pure functions which specify how the application’s state changes in response to an ACTION.",
+              isAnswer: false
+            }
+          ]
+        }
+    ]
+  },
+
+  {
+    id: "fffa23a7-4d8c-4f09-8a63-5e1bc637eca",
+    name: "Vanilla JS",
+    totalScore: 25,
+    questions: [
+      {
+        id: "04c98537-9d22-4bec-83b7-ad4784162b1aa",
+        question: "Convert the string “8675309” to a number.",
+        points: 5,
+        options: [
+          {
+              id: "b829351e-9f55-4abd-a1d7-aa7a35404ce9a",
+              content: "var x = '8675309', x += Number(x)",
+              isAnswer: false
+          },
+          {
+              id: "b45aa490-5a5f-41a3-8177-cca8b64b172ea",
+              content: "var x = '8675309', var y = Number(x)",
+              isAnswer: true
+          },
+          {
+              id: "a2b0c1d2-4f4f-4eef-9279-1a2ac7549700a",
+              content: "var x = 8675309, var y = Number(x)",
+              isAnswer: false
+          }
+        ]
+      },
+      {
+        id: "bee89d5a-8f2f-43b9-b879-02f1cdb8937da",
+        question: "What is JavaScript typeof and how is it used?",
+        points: 5,
+        options: [
+          {
+            id: "abef93aa-d1b8-4eeb-9694-26129a44eef5a",
+            content: "We use the typeof operator to get the data type of an operand. Typeof tells if a function, variable, or object is an object, function, string, boolean, or undefined.",
+            isAnswer: true
+          },
+          {
+            id: "fb380e5f-9d81-4f85-bf05-060f47b31b49a",
+            content: "Typeof is used to convert an object, function, string, boolean, or undefined.",
+            isAnswer: false
+          }
+        ]
+      },
+      {
+        id: "2722ecd0-2d54-4836-8284-76fde5abe7d0a",
+        question: "Is JavaScript thread safe?",
+        points: 5,
+        options: [
+          {
+            id: "6377d841-c842-444a-b473-352578228ea7a",
+            content: "JavaScript is multi-threaded. Each execution thread finishes simultenously, so JS is thread safety issues.",
+            isAnswer: false
+          },
+          {
+            id: "7108c1aa-3398-48c5-be3c-d7fda8b80444a",
+            content: "JavaScript is single-threaded. Each execution thread finishes before the next starts, so JS has no thread safety issues.",
+            isAnswer: true
+          }
+        ]
+      },
+        {
+          id: "2a15eafe-8c11-40f1-89ab-3b8f55104e7aa",
+          question: "How would you change an array into a comma-separated list?",
+          points: 5,
+          options: [
+            {
+              id: "d793b38e-9bc8-4421-be70-6fa2ded81933a",
+              content: "Use the array.concat() method. To change the commas to a different separator, put the new separator between the parentheses.",
+              isAnswer: false
+            },
+            {
+              id: "4ac36f5c-2bdd-4d1c-a2b2-60842f62ebd9a",
+              content: "Use the array.join() method. To change the commas to a different separator, put the new separator between the parentheses.",
+              isAnswer: true
+            }
+          ]
+        },
+        {
+          id: "1af0ab03-c699-4043-9967-7bbf930a9e39a",
+          question: "Does JavaScript support multiple inheritance?",
+          points: 5,
+          options: [
+            {
+              id: "16bad4f8-d48f-41b5-a165-9aa6f5eff54ea",
+              content: "No. Each object in JS has a single “prototype” object.",
+              isAnswer: true
+            },
+            {
+              id: "3003f123-7994-4994-ae8f-79630d91761aa",
+              content: "Yes. Each object in JS has a single “prototype” object.",
+              isAnswer: false
+            }
+          ]
+        }
+    ]
   }
 ]
 

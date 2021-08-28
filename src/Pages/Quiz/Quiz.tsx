@@ -45,22 +45,21 @@ export default function Quiz() {
   useEffect(() => {
     dispatch({ type: "INITIALIZE_CURRENT_QUIZ", payload: { quizId } });
     return () => {};
-  }, []);
+  }, [dispatch,quizId]);
 
   return currentQuiz && currentQuestion ? (
     <div className="min-h-screen w-full max-w-2xl px-4">
       <Header title={currentQuiz.name} />
-      
       <div className="container">
         <div className="w-full flex my-8 justify-between text-xl font-semibold">
           <p>
-            <span className="text-gray-400">Question:</span> {questionNo + 1} / {currentQuiz.questions.length}
+            <span className="text-gray-400">Question:</span> {questionNo + 1} /{" "}
+            {currentQuiz.questions.length}
           </p>
           <p>
             <span className="text-gray-400">Score:</span> {score}
           </p>
         </div>
-
         <h3 className="font-bold my-4 text-lg">{currentQuestion.question}</h3>
         <div className="my-16">
           {currentQuestion.options.map((option) => {
@@ -68,15 +67,14 @@ export default function Quiz() {
               <button
                 disabled={!isClickEnabled}
                 onClick={() => optionClickHandler(option)}
-                className={`block w-full rounded-3xl text-lg my-6 py-6 bg-gray-800 transition-colors duration-200 
-                  ${ !isClickEnabled && option.isAnswer && "bg-green-600" } 
-                  ${
-                    option.id === selectedOptionId &&
-                    !option.isAnswer &&
-                    !isClickEnabled &&
-                    "bg-red-600"
-                  }`
-                }
+                className={`block w-full rounded-3xl text-lg font-semibold my-6 py-6 bg-gray-800 transition-colors duration-200 ease-in ${
+                  !isClickEnabled && option.isAnswer && "bg-green-600"
+                } ${
+                  option.id === selectedOptionId &&
+                  !option.isAnswer &&
+                  !isClickEnabled &&
+                  "bg-red-600"
+                }`}
               >
                 {option.content}
               </button>

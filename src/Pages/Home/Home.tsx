@@ -7,12 +7,14 @@ export default function Home() {
   
   useEffect(() => {
     dispatch({ type: "RESET_STATE" });
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="min-h-screen w-full">
-      <Header title={"Quiz Bank"} />
-      <QuizSelector />
+      <Header title={"Trender Quiz Bank"} />
+      <div className="text-white">
+        <QuizSelector />
+      </div>
     </div>
   );
 }

@@ -8,6 +8,10 @@ export default function Result() {
   } = useData();
   const navigate = useNavigate();
 
+  function QuizNavigator(){
+    navigate('/')
+  }
+
   return (
     <div>
       <Header title="Result" />
@@ -35,6 +39,9 @@ export default function Result() {
             ))}
           </div>
         ))}
+      </div>
+      <div className="px-4 py-3">
+        <h3 className="text-2xl md:text-3xl font-bold text-center" onClick={QuizNavigator}><i className="text-2xl md:text-3xl font-bold material-icons">&#xe5d5;</i>would you like to try again..?</h3>
       </div>
     </div>
   );
