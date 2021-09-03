@@ -11,6 +11,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen w-full">
+      
       <Header title={"Trender Quiz Bank"} />
       <div className="text-white">
         <QuizSelector />
